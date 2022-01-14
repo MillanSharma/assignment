@@ -7,8 +7,8 @@ const app = firebase.initializeApp({
   projectId: "assignment-project-87b4a",
   storageBucket: "assignment-project-87b4a.appspot.com",
   messagingSenderId: "778891228103",
-  appId: "1:778891228103:web:6ba6bd8290f245521fdfe2"
+  appId: "1:778891228103:web:6ba6bd8290f245521fdfe2",
 });
 
-export const auth = app.auth();
+export const auth = app.auth(); //for authentication
 export default app;

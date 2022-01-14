@@ -17,7 +17,7 @@ function Home() {
 
   const calcMean = (arr) => {
     let mean;
-    if (isNaN(arr[arr.length - 1])) return "Please remove commas from the end";
+    // if (isNaN(arr[arr.length - 1])) return "Please remove commas from the end";
     let total = 0;
     for (let i = 0; i < arr.length; i++) {
       total += arr[i];
@@ -31,7 +31,7 @@ function Home() {
 
   const calcMedian = (arr) => {
     let median;
-    if (isNaN(arr[arr.length - 1])) return "";
+    // if (isNaN(arr[arr.length - 1])) return "";
     const { length } = arr;
 
     arr.sort((a, b) => a - b);
@@ -47,7 +47,7 @@ function Home() {
   };
 
   const calcMode = (arr) => {
-    if (isNaN(arr[arr.length - 1])) return "";
+    // if (isNaN(arr[arr.length - 1])) return "";
     const mode = {};
     let max = 0,
       count = 0;
@@ -80,6 +80,16 @@ function Home() {
 
   const handleClick = (e) => {
     e.preventDefault();
+    if (isNaN(numbers[numbers.length - 1])) {
+      alert("Please remove the commas from the end");
+      return;
+    }
+
+    if (numbers.length !== 9) {
+      alert("Enter exactly 9 numbers");
+      return;
+    }
+
     setMean(calcMean(numbers));
     setMedian(calcMedian(numbers));
     setMode(calcMode(numbers));
@@ -110,7 +120,7 @@ function Home() {
             type="text"
             className="w-100 mb-3 p-2"
             onChange={handleChange}
-            placeholder="Type your inputs separated by comma"
+            placeholder="Enter 9 numbers seperated by comma"
           />
           <div className="d-flex justify-content-center mb-4">
             <Button className="w-50" onClick={handleClick}>
