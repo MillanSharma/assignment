@@ -47,7 +47,7 @@ function Home() {
   };
 
   const calcMode = (arr) => {
-    if (isNaN(arr[arr.length - 1])) return "Please remove commas from the end";
+    if (isNaN(arr[arr.length - 1])) return "";
     const mode = {};
     let max = 0,
       count = 0;
