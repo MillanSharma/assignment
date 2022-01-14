@@ -17,7 +17,6 @@ function Home() {
 
   const calcMean = (arr) => {
     let mean;
-    if(arr.length!=9) return "Please enter 9 elements";
     if (isNaN(arr[arr.length - 1])) return "Please remove commas from the end";
     let total = 0;
     for (let i = 0; i < arr.length; i++) {
