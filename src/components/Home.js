@@ -31,7 +31,7 @@ function Home() {
 
   const calcMedian = (arr) => {
     let median;
-    if (isNaN(arr[arr.length - 1])) return "Please remove commas from the end";
+    if (isNaN(arr[arr.length - 1])) return "";
     const { length } = arr;
 
     arr.sort((a, b) => a - b);
