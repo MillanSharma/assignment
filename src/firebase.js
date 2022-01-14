@@ -2,12 +2,12 @@ import firebase from "firebase/app";
 import "firebase/auth";
 
 const app = firebase.initializeApp({
-  apiKey: "AIzaSyARIZQ2zeffLAc6nXbZMkwoTxHz7F_Be1s",
-  authDomain: "milan-assignment.firebaseapp.com",
-  projectId: "milan-assignment",
-  storageBucket: "milan-assignment.appspot.com",
-  messagingSenderId: "924291670273",
-  appId: "1:924291670273:web:2dc4a98bd31bb98018fb00",
+  apiKey: "AIzaSyC4nlCpU3HW239eo9R_9mx_rcyUC1sECrw",
+  authDomain: "assignment-project-87b4a.firebaseapp.com",
+  projectId: "assignment-project-87b4a",
+  storageBucket: "assignment-project-87b4a.appspot.com",
+  messagingSenderId: "778891228103",
+  appId: "1:778891228103:web:6ba6bd8290f245521fdfe2",
 });
 
 export const auth = app.auth();
