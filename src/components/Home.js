@@ -114,13 +114,15 @@ function Home() {
       </div>
 
       <Card>
-        <Card.Title className="p-3 text-center">Pocket Statistics</Card.Title>
+        <Card.Title className="p-3 text-center">
+          Pocket Statistics by Millan
+        </Card.Title>
         <Card.Body>
           <input
             type="text"
             className="w-100 mb-3 p-2"
             onChange={handleChange}
-            placeholder="Enter 9 numbers seperated by comma"
+            placeholder="Enter 9 numbers seperated by comma as input."
           />
           <div className="d-flex justify-content-center mb-4">
             <Button className="w-50" onClick={handleClick}>
