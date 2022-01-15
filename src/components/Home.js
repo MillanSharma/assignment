@@ -115,7 +115,7 @@ function Home() {
 
       <Card>
         <Card.Title className="p-3 text-center">
-          Pocket Statistics by Millan
+          Pocket Statistics.
         </Card.Title>
         <Card.Body>
           <input
